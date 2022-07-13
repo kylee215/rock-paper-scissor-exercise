@@ -18,6 +18,23 @@ computer_choice = random.choice(valid_options)
 print("Computer chose:", computer_choice)
 
 # Determining the winner
+if user_choice == computer_choice:
+    print("Tie")
+elif user_choice == "rock":
+    if computer_choice == "scissors":
+        print("You win")
+    else:
+        print("You lose")
+elif user_choice == "paper":
+    if computer_choice == "rock":
+        print("You win")
+    else:
+        print("You lose")
+elif user_choice == "scissors":
+    if computer_choice == "paper":
+        print("You win")
+    else:
+        print("You lose")
 
 
 # Displaying results
