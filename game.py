@@ -10,10 +10,14 @@ print("You chose:", user_choice)
 
 
 # Validating user inputs
-
+valid_options = ["rock", "paper", "scissors"]
+user_choice = user_choice.lower()
+if user_choice not in valid_options:  
+    print("invalid choice")
+    exit() #quit running program
 
 # Simulating computer selection
-valid_options = ["rock", "paper", "scissors"]
+
 computer_choice = random.choice(valid_options)
 print("Computer chose:", computer_choice)
 
