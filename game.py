@@ -1,6 +1,6 @@
 import random
 
-
+print("Welcome, Player One.")
 print("Rock, Paper, Scissors, Shoot!")
 # this is the "game.py" file
 
@@ -13,7 +13,7 @@ print("You chose:", user_choice)
 valid_options = ["rock", "paper", "scissors"]
 user_choice = user_choice.lower()
 if user_choice not in valid_options:  
-    print("invalid choice")
+    print("Invalid choice. Please start over with a valid selection.")
     exit() #quit running program
 
 # Simulating computer selection
@@ -23,33 +23,24 @@ print("Computer chose:", computer_choice)
 
 # Determining the winner
 if user_choice == computer_choice:
-    print("Tie")
+    print("Result: Tie")
 elif user_choice == "rock":
     if computer_choice == "scissors":
-        print("You win")
+        print("Result: You win")
     else:
-        print("You lose")
+        print("Result: You lose")
 elif user_choice == "paper":
     if computer_choice == "rock":
-        print("You win")
+        print("Result: You win")
     else:
-        print("You lose")
+        print("Result: You lose")
 elif user_choice == "scissors":
     if computer_choice == "paper":
-        print("You win")
+        print("Result: You win")
     else:
-        print("You lose")
+        print("Result: You lose")
 
 
 # Displaying results
 
-#-------------------
-#Welcome 'Player One' to my Rock-Paper-Scissors game...
-#-------------------
-#Please choose either 'rock', 'paper', or 'scissors': rock
-#You chose: 'rock'
-#The computer chose: 'paper'
-#-------------------
-#Oh, the computer won. It's ok.
-#-------------------
-#Thanks for playing. Please play again!
+print("Thank you for playing.")
